@@ -31,3 +31,61 @@
 //   const result = greatestSum(array);
 //   console.log(result);}
 //  End phần bài 2
+//
+//  Start phần bài 3
+// function findPairs(arr,sum) {
+//     const pairs = [];
+//     for (i=0; i<arr.length -1;i++){
+//         for(j=1;j<arr.length; j++){
+//             if (arr[i]+arr[j]== sum){
+//                 pairs.push([arr[i],arr[j]])
+//             }
+//         }
+//     }
+// }
+//     return pairs;
+//  End phần bài 3
+//  Start phần bài 4
+// function uniqueArray(arr){
+//     const set = new Set(arr);
+//     const uniqueArr = Array.from(set)
+//     return uniqueArr
+// }
+// function uniqueArray(arr){
+//     const  uniqueArr = [];
+//     const obj = {};
+//     for (const item of arr){
+//         if (!obj[item]){
+//             uniqueArr.push(item);
+//             obj[item]= true;
+//         }
+//     }
+//     return uniqueArr 
+// }
+//  End phần bài 4
+//  Start phần bài 5
+// function duplicateArray(arr1,arr2){
+//     const duplicateArr=[];
+//     for(const item of arr1){
+//         if(arr2.includes(item) && !duplicateArr.includes(item)){
+//             duplicateArr.push(item)
+//         }
+//     }
+//     return duplicateArr;
+// }
+//  End phần bài 5
+//  Start phần bài 6
+// function findDuplicates(arr){
+//     const count={};
+//     const duplicate=[]
+//     for(const item of arr){
+//         count[item]= (count[item] || 0) + 1
+//     }
+//     for (const item in count){
+//         if( count[item]>1){
+//             duplicate.push(item)
+//         }
+//     }
+//     return duplicate
+// }
+//  End phần bài 6
